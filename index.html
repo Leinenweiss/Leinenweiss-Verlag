@@ -1,0 +1,119 @@
+index.html
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leinenweiß‑Verlag · Offizielle Buchseite</title>
+  <meta name="description" content="Offizielle Informationsseite zum Buch · Leinenweiß‑Verlag. Erhältlich im Buchhandel unter ISBN …" />
+  <style>
+    :root{--bg:#f7f7f7;--fg:#1a1a1a;--muted:#666;--brand:#222;--card:#fff;--border:#e5e5e5}
+    *{box-sizing:border-box}
+    body{margin:0;font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+    .wrap{max-width:960px;margin:auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{font-weight:700;letter-spacing:.5px}
+    .nav a{color:var(--fg);text-decoration:none;margin-left:16px}
+
+    .hero{margin:32px 0;display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .cover{aspect-ratio:3/4;background:#ddd;border:1px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#888}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px}
+    h1{margin:0 0 8px 0;font-size:clamp(24px, 3vw, 36px)}
+    h2{margin:0 0 8px 0;font-size:20px}
+    .muted{color:var(--muted)}
+    .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+    .btn{display:inline-block;border:1px solid var(--border);background:#fff;border-radius:999px;padding:10px 14px;text-decoration:none;color:var(--fg)}
+    .btn:hover{border-color:#bbb}
+    .section{margin:32px 0}
+    .grid{display:grid;gap:16px}
+    @media (min-width:740px){.grid{grid-template-columns:1fr 1fr}}
+    code{background:#f0f0f0;padding:2px 6px;border-radius:6px}
+    footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--border);font-size:14px;color:var(--muted)}
+    details{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">Leinenweiß‑Verlag</div>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="#buch">Buch</a>
+        <a href="#presse">Presse</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </header>
+
+    <main id="buch" class="hero">
+      <img src="cover.jpg" alt="Buchcover: Der unsichtbare Raum" class="cover" />
+      <div class="card">
+        <h1>Der unsichtbare Raum</h1>
+        <p class="muted">Von Mäusen, Menschen und der Kunst, frei zu bleiben</p>
+        <p class="muted">Autorin: Susanne Rohde · Leinenweiß‑Verlag</p>
+        <p><strong>ISBN:</strong> <span id="isbn">978-3-00-084603-8</span></p>
+        <p><strong>Erhältlich im Buchhandel</strong> unter Angabe der ISBN oder über die folgenden Bezugsquellen:</p>
+        <div class="btns" aria-label="Bezugsquellen">
+          <a class="btn" href="#" rel="nofollow noopener" target="_blank">Buchhandlung vor Ort (mit ISBN bestellen)</a>
+          <a class="btn" href="#" rel="nofollow noopener" target="_blank">Online‑Shop A</a>
+          <a class="btn" href="#" rel="nofollow noopener" target="_blank">Online‑Shop B</a>
+        </div>
+      </div>
+    </main>
+
+    <section class="section">
+      <div class="grid">
+        <div class="card">
+          <h2>Auszug</h2>
+          <p>„Es war, als würde das Schloss selbst atmen. In den Hallen roch es nach Holz und Staub, draußen flackerte das Licht von hundert Kerzen. Niemand sprach von Verwaltung oder Plänen, und doch wussten alle, dass hier etwas begann, das größer war als ein Fest. Unter dem Gelächter lag eine Stille, die man nur spürt, wenn sich ein neuer Raum öffnet – unsichtbar, und doch da.“</p>
+        </div>
+        <div class="card">
+          <h2>Bibliografische Daten</h2>
+          <ul>
+            <li>Autorin: Susanne Rohde</li>
+            <li>Titel: Der unsichtbare Raum – Von Mäusen, Menschen und der Kunst, frei zu bleiben</li>
+            <li>ISBN: 978-3-00-084603-8</li>
+            <li>Umfang: 276 Seiten</li>
+            <li>Format: 125 × 190 mm, Softcover</li>
+            <li>Auflage/Jahr: 1. Auflage, 2025</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="presse" class="section">
+      <div class="card">
+        <h2>Presse & Leseprobe</h2>
+        <p><a href="leseprobe.pdf" download>Download Leseprobe (PDF)</a> · <a href="pressebilder.zip" download>Pressebilder (ZIP)</a> · <a href="ISBN_9783000846038.png" download>EAN‑Strichcode (PNG)</a></p>
+        <p class="muted">Hinweis: Dies ist eine reine Informationsseite ohne Shop‑Funktion. Bestellungen erfolgen ausschließlich über den Buchhandel/angegebene Händler.</p>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section">
+      <div class="card">
+        <h2>Kontakt</h2>
+        <p>E‑Mail: <a href="mailto:kontakt@leinenweiss-verlag.de">kontakt@leinenweiss-verlag.de</a></p>
+        <details>
+          <summary>Impressum</summary>
+          <p><strong>Verantwortlich i. S. d. § 5 TMG</strong><br />
+            Leinenweiß‑Verlag (Imprint)<br />
+            Susanne [Nachname]<br />
+            [Straße Hausnummer]<br />
+            [PLZ Ort], Deutschland
+          </p>
+          <p><strong>Hinweise</strong><br />
+            Keine Bestellabwicklung auf dieser Webseite. Kein Tracking, keine Cookies, keine Formulare.
+          </p>
+          <p><strong>Datenschutz</strong><br />
+            Diese Seite verarbeitet keine personenbezogenen Daten, setzt keine Cookies und bindet keine externen Drittinhalte ein.</p>
+        </details>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Leinenweiß‑Verlag · Informationsseite zum Buch · Kein Online‑Shop.
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
